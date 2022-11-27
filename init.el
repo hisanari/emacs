@@ -216,6 +216,12 @@
   :global-minor-mode t
   )
 
+(leaf startup
+  :doc "process Emacs shell arguments"
+  :tag "builtin" "internal"
+  :added "2022-11-27"
+  :custom `((auto-save-list-file-prefix . ,(locate-user-emacs-file "backup/.saves-"))))
+
 (provide 'init)
 
 (custom-set-variables
