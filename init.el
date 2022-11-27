@@ -186,6 +186,10 @@
   (doom-modeline-mu4e . nil)
   (doom-modeline-irc . nil))
 
+(leaf paren
+  :tag "builtin"
+  :custom ((show-paren-delay . 0.1))
+  :global-minor-mode show-paren-mode)
 
 (provide 'init)
 
