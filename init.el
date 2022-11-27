@@ -201,6 +201,21 @@
   :ensure t
   :after compat git-commit magit-section with-editor)
 
+(leaf ivy
+  :doc "Incremental Vertical completYon"
+  :req "emacs-24.5"
+  :tag "matching" "emacs>=24.5"
+  :url "https://github.com/abo-abo/swiper"
+  :added "2022-11-27"
+  :emacs>= 24.5
+  :ensure t
+  :blackout t
+  :leaf-defer nil
+  :custom ((ivy-initial-inputs-alist . nil)
+           (ivy-use-selectable-prompt . t))
+  :global-minor-mode t
+  )
+
 (provide 'init)
 
 (custom-set-variables
