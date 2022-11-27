@@ -191,6 +191,16 @@
   :custom ((show-paren-delay . 0.1))
   :global-minor-mode show-paren-mode)
 
+(leaf magit
+  :doc "A Git porcelain inside Emacs."
+  :req "emacs-25.1" "compat-28.1.1.2" "dash-20210826" "git-commit-20220222" "magit-section-20220325" "transient-20220325" "with-editor-20220318"
+  :tag "vc" "tools" "git" "emacs>=25.1"
+  :url "https://github.com/magit/magit"
+  :added "2022-11-27"
+  :emacs>= 25.1
+  :ensure t
+  :after compat git-commit magit-section with-editor)
+
 (provide 'init)
 
 (custom-set-variables
