@@ -163,9 +163,7 @@
 
 (leaf flycheck
   :ensure t
-  :init (global-flycheck-mode)
-  :config
-  (setq flycheck-check-syntax-automatically `(mode-enabled save))
+  :global-minor-mode global-flycheck-mode
   )
 
 (leaf which-key
